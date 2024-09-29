@@ -10,7 +10,7 @@ function App() {
     <>
     <Header/>
     <Hero/>
-    <Title subtitle="our catalog" maintitle="some of the Leaders"/>
+    <Title subtitle="leadership page" maintitle="MUTC Team Leaders"/>
     <Footer/>
     </>
     
