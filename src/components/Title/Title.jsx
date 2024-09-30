@@ -1,4 +1,5 @@
 import "./Title.css"
+
 function title ({subtitle, maintitle}) {
     return(
         <div className="Title">

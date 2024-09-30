@@ -1,6 +1,7 @@
 .catalogue-section{
     margin-top: 5rem;
 }
-.CatlogueCard{
+.CatalogueCard{
     width: 6rem;
+    border: 1px solid red;
 }
