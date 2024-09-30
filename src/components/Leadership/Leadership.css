@@ -1,7 +1,83 @@
 .catalogue-section {
-  margin-top: 5rem;
+  padding: 2rem;
 }
-.CatalogueCard {
-  width: 6rem;
-  border: 1px solid red;
+
+.catalogue-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.catalogue-card {
+  width: 30rem;
+  margin: 2rem auto;
+  box-shadow: 0 0 1rem var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  transition: transform 1s ease;
+}
+
+.catalogue-card:hover {
+  transform: scale(1.05);
+}
+
+.catalogue-card-title {
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.position {
+  font-weight: 500;
+  text-shadow: 0 0 3rem;
+}
+
+.card-image {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+  flex-direction: column;
+}
+
+.card-image img {
+  --size: 15rem;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+}
+
+.position {
+  font-size: larger;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.catalogue-card-description {
+  text-transform: capitalize;
+  line-height: 1.3;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  margin: 1rem;
+}
+
+.social-icons a {
+  font-size: 2.5rem;
+  text-decoration: none;
+  font-size: x-large;
+  color: greenyellow;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--color-primary);
 }

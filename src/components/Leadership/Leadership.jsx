@@ -1,17 +1,60 @@
 import "./Leadership.css";
 import Title from "../Title/Title";
-import Person1 from "../../assets/person1.jpg";
+import leaders from "../../data/leadership";
 
-function CatalogueCard({ thumbnail, title, description }) {
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaFacebook } from "react-icons/fa6";
+import { IoLogoInstagram } from "react-icons/io5";
+import { IoLogoLinkedin } from "react-icons/io";
+
+function CatalogueCard({
+  thumbnail,
+  title,
+  description,
+  position,
+  socialMediaIcons,
+}) {
   return (
     <div className="catalogue-card">
-      <div>
+      <h3 className="catalogue-card-title">{title}</h3>
+      <div className="card-image">
         <img src={thumbnail} alt={title} />
+        <p className="position">{position}</p>
       </div>
-      <div className="catalogue-card-body">
-        <h3 className="catalogue-card-title">{title}</h3>
-        <p className="catalogue-card-description">{description}</p>
-      </div>
+      <p className="catalogue-card-description">{description}</p>
+      <SocialMediaIcons
+        twitter={socialMediaIcons.twitter}
+        facebook={socialMediaIcons.facebook}
+        instagram={socialMediaIcons.instagram}
+        linkedin={socialMediaIcons.linkedin}
+      />
+    </div>
+  );
+}
+
+function SocialMediaIcons({ twitter, facebook, linkedin, instagram }) {
+  return (
+    <div className="social-icons">
+      {twitter && (
+        <a href={twitter} className="social-links">
+          <FaSquareXTwitter />
+        </a>
+      )}
+      {facebook && (
+        <a href={facebook} className="social-links">
+          <FaFacebook />
+        </a>
+      )}
+      {instagram && (
+        <a href={instagram} className="social-links">
+          <IoLogoInstagram />
+        </a>
+      )}
+      {linkedin && (
+        <a href={linkedin} className="social-links">
+          <IoLogoLinkedin />
+        </a>
+      )}
     </div>
   );
 }
@@ -19,13 +62,21 @@ function CatalogueCard({ thumbnail, title, description }) {
 function Leadership() {
   return (
     <section className="catalogue-section">
-      <Title subtitle="Leadership Page" maintitle="MUTC Team Leaders" />
+      <Title
+        subtitle="Leadership Page"
+        maintitle="MUTC Dedicated Team Leaders"
+      />
       <div className="catalogue-cards-container">
-        <CatalogueCard
-          thumbnail={Person1}
-          title="Dr. John Ndia"
-          description="Patron of the club. Passionate about technology education."
-        />
+        {leaders.map((leader, index) => (
+          <CatalogueCard
+            key={index}
+            thumbnail={leader.thumbnail}
+            title={leader.title}
+            position={leader.position}
+            description={leader.description}
+            socialMediaIcons={leader.socialMediaIcons}
+          />
+        ))}
       </div>
     </section>
   );
