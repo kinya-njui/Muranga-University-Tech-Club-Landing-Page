@@ -1,0 +1,43 @@
+.events-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.event-card {
+  box-shadow: 0 0 1rem var(--color-primary);
+  border-radius: 1rem;
+  margin: 2px;
+  padding: 2rem;
+  text-align: center;
+  width: 250px; /* Adjust as needed */
+}
+
+.event-card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+
+.event-card-name {
+  color: var(--color-primary);
+  font-size: 1.5em;
+  margin: 1rem 0;
+}
+
+.event-card-time {
+  text-transform: capitalize;
+  font-style: italic;
+}
+.event-card-location {
+  font-weight: 500;
+  font-style: italic;
+  margin: 5px;
+}
+.event-card-leader,
+.event-card-description {
+  font-size: 1.5rem;
+  margin: 4px 0;
+}

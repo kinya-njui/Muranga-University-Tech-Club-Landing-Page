@@ -1,4 +1,4 @@
-import "./Catalogue.css";
+import "./Leadership.css";
 import Title from "../Title/Title";
 import Person1 from "../../assets/person1.jpg";
 
@@ -16,7 +16,7 @@ function CatalogueCard({ thumbnail, title, description }) {
   );
 }
 
-function Catalogue() {
+function Leadership() {
   return (
     <section className="catalogue-section">
       <Title subtitle="Leadership Page" maintitle="MUTC Team Leaders" />
@@ -31,4 +31,4 @@ function Catalogue() {
   );
 }
 
-export default Catalogue;
+export default Leadership;

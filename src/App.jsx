@@ -3,10 +3,11 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Hero from "./components/Hero/Hero";
 import Title from "./components/Title/Title";
-import Catalogue from "./components/Catalogue/Catalogue";
+import Leadership from "./components/Leadership/Leadership";
 import AboutUs from "./components/AboutUs/AboutUs";
 import Testimonies from "./components/Testimonies/Testimonies";
 import Tracks from "./components/Tracks/Tracks";
+import Events from "./components/Events/Events";
 
 function App() {
   return (
@@ -15,8 +16,9 @@ function App() {
       <Hero />
       <AboutUs />
       <Title />
-      <Catalogue />
+      <Leadership />
       <Testimonies />
+      <Events />
       <Tracks />
       <Footer />
     </>
