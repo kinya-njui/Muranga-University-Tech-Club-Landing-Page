@@ -1,4 +1,5 @@
 import "./header.css";
+import { Link } from "react-router-dom";
 
 function Navigation() {
   return (
@@ -7,16 +8,16 @@ function Navigation() {
       <nav>
         <ol className="navigationlist">
           <li>
-            <a href="#">home</a>
+            <Link to="/">home</Link>
           </li>
           <li>
-            <a href="#">Leadership</a>
+            <Link to="/Leadership">Leadership</Link>
           </li>
           <li>
-            <a href="#">Track</a>
+            <Link to="/Tracks">Track</Link>
           </li>
           <li>
-            <a href="#">Event</a>
+            <Link to="/Events">Events</Link>
           </li>
         </ol>
       </nav>

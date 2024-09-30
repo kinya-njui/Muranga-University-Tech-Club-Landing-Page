@@ -1,6 +1,7 @@
 import "./Tracks.css";
 import tracks from "../../data/tracks";
 import Title from "../Title/Title";
+import TracksForm from "../TracksForm/TracksForm";
 
 function TrackCard({ trackImage, trackName, trackDescription }) {
   return (
@@ -25,6 +26,9 @@ function Tracks() {
             trackDescription={track.trackDescription}
           />
         ))}
+      </div>
+      <div className="TracksForm">
+        <TracksForm />
       </div>
     </section>
   );
