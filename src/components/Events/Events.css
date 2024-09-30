@@ -36,7 +36,8 @@
   font-style: italic;
   margin: 5px;
 }
-.event-card-leader,
+.event-card-leader {
+}
 .event-card-description {
   font-size: 1.5rem;
   margin: 4px 0;
