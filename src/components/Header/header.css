@@ -1,31 +1,30 @@
-.nav-bar{
-    display: flex;
-    text-transform: capitalize;
-    justify-content: space-between;
-    list-style: none;
-    color: white;
-    background-color: #F6BB29;
-    padding: 30px;
+.nav-bar {
+  display: flex;
+  text-transform: capitalize;
+  justify-content: space-between;
+  list-style: none;
+  color: white;
+  background-color: #f6bb29;
+  padding: 30px;
 }
 
-.header-tittle{
-    margin-left: 20px;
-    color: blue;
-    font-weight: 750;
-
+.header-tittle {
+  margin-left: 20px;
+  color: blue;
+  font-weight: 750;
 }
 
-.navigationlist{
-    display: flex;
-    gap: 2.5rem;
-    color: blue;
-    font-weight: 500;
+.navigationlist {
+  display: flex;
+  gap: 2.5rem;
+  color: blue;
+  font-weight: 500;
 }
 
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }

@@ -1,33 +1,34 @@
-.hero-section{
-    height: 65rem; /* Full screen height */
-      background-image:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.7)),  url('../../assets/Hero-image.jpeg');
-      background-size: cover;
-      background-position: center;
-      /* display: flex; */
-      text-align: justify;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      text-transform: capitalize;
-      color: white;
-      padding: 15rem;
-      height: 90vh
-  }
-  
-  .hero-title{
-    padding: 8rem;
-    font-style: italic;
-    color: #E9530E;
-  }
+.hero-section {
+  height: 65rem; /* Full screen height */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url("../../assets/Hero-image.jpeg");
+  background-size: cover;
+  background-position: center;
+  /* display: flex; */
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  color: white;
+  padding: 15rem;
+  height: 90vh;
+}
 
-  .hero-title-text {
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    padding: 3rem 2rem;
-  }
-  .hero-link{
-    padding: 20rem auto;
-    text-transform: inherit;
-    font-size: 2rem; 
-  }
+.hero-title {
+  padding: 8rem;
+  font-style: italic;
+  color: #e9530e;
+}
+
+.hero-title-text {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 3rem 2rem;
+}
+.hero-link {
+  padding: 20rem auto;
+  text-transform: inherit;
+  font-size: 2rem;
+}
