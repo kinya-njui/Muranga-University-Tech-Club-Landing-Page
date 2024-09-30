@@ -1,0 +1,43 @@
+.tracks-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 200rem;
+  margin: 0 auto;
+  padding: 2rem 3rem;
+}
+
+.track-card {
+  border-radius: 8px;
+  box-shadow: 0 0 0.3rem var(--color-primary);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s;
+  flex: 1 1 calc(33.333% - 20px);
+  box-sizing: border-box;
+}
+
+.track-card:hover {
+  transform: scale(1.05);
+}
+
+.track-card-image {
+  width: 100%;
+  height: 20rem;
+  max-width: 37rem;
+  margin-bottom: 1.5rem;
+}
+
+.track-card-name {
+  color: var(--color-primary);
+  font-size: 2rem;
+  font-weight: 650;
+  margin-bottom: 1rem;
+}
+
+.track-card-description {
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  color: #0f0f0f;
+}

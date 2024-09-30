@@ -6,6 +6,7 @@ import Title from "./components/Title/Title";
 import Catalogue from "./components/Catalogue/Catalogue";
 import AboutUs from "./components/AboutUs/AboutUs";
 import Testimonies from "./components/Testimonies/Testimonies";
+import Tracks from "./components/Tracks/Tracks";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Title />
       <Catalogue />
       <Testimonies />
+      <Tracks />
       <Footer />
     </>
   );
